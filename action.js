@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var hat = document.getElementById('hat');
 	var animal = document.getElementById('animal');
 	var isOn = false;
-	var isRabbit = true;
+	var isPigeon = true;
     var turn = document.getElementById('turn');
 
 	curtain.onclick = function() {
@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 	light.onclick = function() {
-		if (isRabbit){
-			setTimeout("animal.src = 'animal2.png', animal.style.marginTop = '20px'", 1000);
-			isRabbit = false;
+		if (isPigeon){
+			setTimeout("animal.src = 'animal1.png', animal.style.marginTop = '20px'", 1000);
+			isPigeon = false;
 		}
 		else{
-			setTimeout("animal.src = 'animal1.png', animal.style.marginTop = '20px'", 1000);
-			isRabbit = true;
+			setTimeout("animal.src = 'animal2.png', animal.style.marginTop = '20px'", 1000);
+			isPigeon = true;
 		}
 		animal.style.marginTop = '150px';
 		animal.style.transition = '0.5s';
